@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="to-do-list.css" />
+  </head>
+  <body>
+    <div class="date_and_details">
+      <!-- 1st div that contains date and submit button -->
+      <div class="make-me-flex">
+        <input type="date" id="date" name="date" />
+        <button class="date_submit" id="loadTasksBtn">Go!</button>
+      </div>
+      <!-- 2nd div that contains username and logOut button -->
+      <div class="make-me-flex">
+        <span id="userEmail">Loading...</span>
+        <button class="date_submit log_out" id="logoutBtn">Log Out</button>
+      </div>
+    </div>
+    <!-- container of to-do list -->
+    <div class="container">
+      <div class="header">
+        <h2>My To-Do List</h2>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="myInput" placeholder="Add a new task..." />
+        <button onclick="newElement()" class="addBtn">Add</button>
+      </div>
+
+      <ul id="myUL">
+        <!-- <li class="checked">Go for a run</li>
+        <li>Read a book</li>
+        <li>Drink 4 litre water</li>
+        <li>Practice coding</li> -->
+      </ul>
+    </div>
+
+    <script type="module" src="to-do-list.js"></script>
+  </body>
+</html>

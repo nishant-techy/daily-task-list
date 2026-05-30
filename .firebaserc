@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "to-do-daily-list-app",
+    "prod": "to-do-daily-list"
+  },
+  "targets": {},
+  "etags": {}
+}

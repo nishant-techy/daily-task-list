@@ -1,0 +1,126 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 5rem;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 4em;
+  /* text-align: justify; */
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/* buttons css */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+  .each-btn {
+    min-width: 210px; /* it makes all of the buttons look equally wide */
+  }
+}
+.each-btn {
+  padding: 0.5rem 4rem;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+}
+.each-btn:hover {
+  box-shadow: 1px 2px 2px 1px aqua;
+  background-color: black;
+  color: white;
+}
+
+/* pop-up css */
+.pop-up {
+  position: absolute;
+  margin: 0 auto;
+  background-color: rgb(59, 59, 59);
+  width: 500px;
+  height: 50vh;
+  border-radius: 15px;
+  padding: 20px;
+  display: none;
+  z-index: 99;
+}
+
+.input-things {
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto;
+}
+.input-things h2 {
+  margin: 0 auto;
+  font-size: 2.3em;
+}
+.input-things p {
+  margin: 0 auto;
+}
+.input-things p a {
+  text-decoration: none;
+  color: yellow;
+}
+input {
+  width: 70%;
+  padding: 5px;
+  margin: 12px auto;
+  font-size: 20px;
+  position: relative;
+}
+.inside-pop-up-btn {
+  width: 70%;
+  margin: 10px auto;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+.inside-pop-up-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* cross btn for close pop-up */
+.close_pop_up {
+  font-size: 20px;
+  font-weight: bolder;
+  border: 1px solid grey;
+  padding: 5px 20px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.close_pop_up:hover {
+  background-color: red;
+  cursor: pointer;
+}

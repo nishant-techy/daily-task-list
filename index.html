@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>
+        A simple <span style="color: #0ef"> to-do list </span><br />
+        to manage it all
+      </h1>
+      <div class="buttons">
+        <!-- first button for sign-up -->
+        <button class="each-btn" id="signupBtn">Sign-up</button>
+        <!-- second button for demo -->
+        <button class="each-btn" id="demoBtn">Demo</button>
+        <!-- third button for Login -->
+        <button class="each-btn" id="loginBtn">Login</button>
+      </div>
+
+      <!-- Sign-up pop-up -->
+      <div class="pop-up" id="signupPopup">
+        <span class="close_pop_up">&times;</span>
+        <div class="input-things">
+          <h2>Sign Up</h2>
+          <input type="email" id="signupEmail" placeholder="Enter email..." />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Enter password"
+          />
+          <button class="inside-pop-up-btn" id="doSignup">Sign-up</button>
+          <p>
+            Already a member?
+            <a href="#" id="openLoginFromSignup">Login now</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Login pop-up -->
+      <div class="pop-up" id="loginPopup">
+        <span class="close_pop_up">&times;</span>
+        <div class="input-things">
+          <h2>Login</h2>
+          <input type="email" id="loginEmail" placeholder="Enter email..." />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter password"
+          />
+          <button class="inside-pop-up-btn" id="doLogin">Login</button>
+          <p>
+            New member?
+            <a href="#" id="openSignupFromLogin">Sign-up now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
